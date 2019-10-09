@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>-Hesap Makinesi-</title>
+    <style>
+            body{
+                margin-top:100px;
+                margin-left: 100px;
+            }
+            #form{
+                background:black;
+                width: 435px;
+                padding:10px;
+                border:10px solid pink;
+                border-radius: 20px;
+            }
+            #buton{
+                width: 50px;
+                height: 50px;
+                font-family: 'Times New Roman', Times, serif;
+                background: salmon;
+                font-size:20px;
+                border-radius: 20px;
+            }
+         #ekran{
+             width:200px;
+             height:100px;
+             font-family:Arial, Helvetica, sans-serif;
+             font-size:50px;
+             background: azure;
+             margin-bottom:10px;
+             border-radius:15px;
+
+         }
+
+    </style>
+</head>
+<body>
+    <form id="form" name="hesapMakinesi">
+ 
+              <table>
+
+                <tr>
+                    <td colspan ="4">
+                        <input id="ekran" type ="text" disabled>
+                    </td>
+                     </tr>
+                     <tr>
+                            <td><input id= "buton" type="button" value="1" onclick="hesapMakinesi.ekran.value+='1'"></td>
+                            <td><input id= "buton" type="button" value="2" onclick="hesapMakinesi.ekran.value+='2'"></td>
+                            <td><input id= "buton" type="button" value="3"onclick="hesapMakinesi.ekran.value+='3'"></td>
+                            <td><input id= "buton" type="button" value="+"onclick="hesapMakinesi.ekran.value+='+'"></td>
+                     </tr>
+                     <tr>
+                            <td><input id= "buton" type="button" value="4" onclick="hesapMakinesi.ekran.value+='4'"></td>
+                            <td><input id= "buton" type="button" value="5"onclick="hesapMakinesi.ekran.value+='5'"></td>
+                            <td><input id= "buton" type="button" value="6"onclick="hesapMakinesi.ekran.value+='6'"></td>
+                            <td><input id= "buton" type="button" value="-"onclick="hesapMakinesi.ekran.value+='-'"></td>
+                     </tr>
+                     <tr>
+                            <td><input id= "buton" type="button" value="7"onclick="hesapMakinesi.ekran.value+='7'"></td>
+                            <td><input id= "buton" type="button" value="8"onclick="hesapMakinesi.ekran.value+='8'"></td>
+                            <td><input id= "buton" type="button" value="9"onclick="hesapMakinesi.ekran.value+='9'"></td>
+                            <td><input id= "buton" type="button" value="x"onclick="hesapMakinesi.ekran.value+='*'"></td>
+                     </tr>
+                     <tr>
+                            <td><input id= "buton" class="sil" type="button"  value="C" onclick="hesapMakinesi.ekran.value=''"></td>
+                            <td><input id= "buton" type="button" value="0" onclick="hesapMakinesi.ekran.value+='0'"></td>
+                            <td><input id= "buton" type="button" value="=" onclick="hesapMakinesi.ekran.value = eval(hesapMakinesi.ekran.value)"></td>
+                            <td><input id= "buton" type="button" value="/" onclick="hesapMakinesi.ekran.value+='/'"></td>
+                     </tr>
+
+
+              </table>
+
+
+
+
+
+    </form>
+</body>
+</html>
